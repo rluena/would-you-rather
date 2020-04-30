@@ -36,7 +36,13 @@
     ]
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.1.0",
     "redux-devtools-extension": "^2.13.8",
     "redux-immutable-state-invariant": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
