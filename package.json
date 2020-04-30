@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "doc": "jsdoc -c jsdoc.config.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.1.0",
+    "jsdoc": "^3.6.4",
     "redux-devtools-extension": "^2.13.8",
     "redux-immutable-state-invariant": "^2.1.0"
   },
