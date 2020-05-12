@@ -31,6 +31,7 @@ export const defaultTheme = {
           success: neutral[100],
           warning: neutral[100],
           danger: neutral[100],
+          disabled: neutral[100],
         },
       },
     },
@@ -41,6 +42,7 @@ export const defaultTheme = {
           // success: green[400],
           warning: yellow[100],
           danger: red[300],
+          disabled: "",
         },
       },
     },
@@ -54,4 +56,5 @@ export const defaultTheme = {
     l: "32px",
     xl: "64px",
   },
+  media: {},
 };
