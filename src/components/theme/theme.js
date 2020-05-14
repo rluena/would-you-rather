@@ -1,4 +1,5 @@
 import { blue, red, yellow, neutral } from "./colors";
+import { spacing } from "./spacing";
 
 export const defaultTheme = {
   font: {
@@ -25,6 +26,7 @@ export const defaultTheme = {
   },
   color: {
     text: {
+      default: neutral[100],
       button: {
         primary: {
           default: neutral[100],
@@ -34,30 +36,58 @@ export const defaultTheme = {
           disabled: neutral[100],
         },
       },
+      card: {
+        heading: neutral[100],
+        headingDark: neutral[500],
+        question: blue[400],
+        scoreBox: neutral[100],
+      },
+      box: {
+        text: blue[200],
+      },
     },
     background: {
       button: {
         primary: {
-          default: blue[400],
-          // success: green[400],
+          default: blue[200],
           warning: yellow[100],
-          danger: red[300],
+          danger: red[200],
           disabled: "",
         },
       },
+      hr: neutral[200],
       card: {
-        default: neutral[100],
+        wrapper: neutral[200],
+        header: blue[200],
+        rightContent: neutral[100],
+        scoreBox: blue[200],
       },
     },
   },
-  spacing: {
-    default: "16px",
-    xxs: "2px",
-    xs: "4px",
-    s: "8px",
-    m: "16px",
-    l: "32px",
-    xl: "64px",
+  spacing: { ...spacing },
+  size: {
+    button: {
+      small: `${spacing.s}`,
+      default: `${spacing.m} ${spacing.l}`,
+      large: `${spacing.l} ${spacing.m}`,
+    },
+    card: {
+      padding: {
+        header: `${spacing.m} ${spacing.l}`,
+        content: `${spacing.l}`,
+        leftContent: `${spacing.m} ${spacing.l}`,
+        rightContent: `${spacing.m} ${spacing.l}`,
+        questionsBox: `${spacing.m} ${spacing.l}`,
+      },
+    },
+  },
+  border: {
+    avatar: `2px solid ${blue[100]}`,
+  },
+  shadow: {
+    card: {
+      wrapper: "0px 2px 2px rgba(0, 0, 0, 0.15)",
+    },
   },
   media: {},
 };
