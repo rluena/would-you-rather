@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const Button = styled.button`
   outline: none;
   border: none;
-  padding: 12px 24px;
+  padding: ${(props) => props.theme.size.button.default};
   cursor: pointer;
 `;
 
@@ -41,14 +41,13 @@ Button.primary = styled(Button)`
     ${(props) =>
       props.small &&
       css`
-        padding: ${(props) => props.theme.spacing.s};
+        padding: ${(props) => props.theme.size.button.small};
       `}
   
     ${(props) =>
       props.large &&
       css`
-        padding: ${(props) => props.theme.spacing.default}
-          ${(props) => props.theme.spacing.large};
+        padding: ${(props) => props.theme.size.button.large};
       `}
 `;
 
